@@ -2,12 +2,13 @@ var health = 100
 var slapCount = 0
 var kickCount = 0
 var punchCount = 0
-var hitCount = 0
+var hitCountTotal = 0
 
 
 function hitCounter() {
-    hitCount = (slapCount + punchCount + kickCount)
-    document.getElementById("hitCounter").innerHTML = hitCount;
+    hitCountTotal = (slapCount + punchCount + kickCount)
+    
+    document.getElementById("hitCounter").innerHTML = hitCountTotal;
     update()
 
 }
@@ -37,14 +38,17 @@ function kick(){
 }
 function reset(){
     health = 100
-    hitCount = 0
+    hitCountTotal = 0
+    slapCount = 0
+    kickCount = 0
+    punchCount = 0
     update()
 
 }
 
 function update(){
        document.getElementById("healthDisplay").innerHTML = health;
-       document.getElementById("hitCounter").innerHTML = hitCount;
+       document.getElementById("hitCounter").innerHTML = hitCountTotal;
 }
 
 /*Jame Parrott  
