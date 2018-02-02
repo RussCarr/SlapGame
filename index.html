@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Slap Object Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="game.css">
-	
-</head>
-<body>
-	
 
+</head>
+
+<body>
+	<div class="container">
+
+	</div>
+	<div class="header">
+		<h1>Welcome to the Slap Game!</h1>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3 center">
+			<h2><span>Today's Victim is Unknown<span id="nameDisplay">...</span></h2>
+			<h3><span>Time to bring the Pain!</h2>
+			<h5><span>Health:<span id="healthDisplay">...</span></h5>
+			<h5><span>Hits:<span id="hitCounter">...</span></h5>
+		</div>
+		<div class="col-lg-3">
+			<img src="//placehold.it/400x400" alt="Slap Game Target">
+		</div>
+		<div class="col-lg-3"></div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3 .buttons">
+				<div class="col-lg-3">
+			<footer>
+				<button onclick="slap()">Slap</button>
+				<button onclick="punch()">Punch</button>
+				<button onclick="kick()">Kick</button>
+				<button onclick="reset()">Reset</button>
+			</footer>
+		</div>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+	</div>
 	<script src="game.js"></script>
 </body>
+
 </html>
