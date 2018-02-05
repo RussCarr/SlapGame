@@ -14,20 +14,24 @@
 
 <body>
 	<div class="container">
-		<button id="start" onclick="victimInfo()">Play</button>
+		<!--<button id="start" onclick="victimInfo()">Play</button>-->
 		<div class="header">
-			<h1>Welcome to the Slap Game!</h1>
-			<div class="header">
-					<h1>Welcome, it's time to bring the Pain!</h1>
-				</div>
-				<div class="row">
-				<div class="col-lg-3 center">
-					<h2>
-						<span>Today's Victim is ${victim.name}
-							<span id="nameDisplay">...</span>
-					</h2>
-					<h3>
-						<span>Time to bring the Pain!</h2>
+			<h1>Welcome to 187 Murder, Death, Kill!</h1>
+			
+			<div class="row">
+				<div class="col-lg-12 center">
+
+					<div class="row">
+						<div class="col-lg-6 center">
+							<img src="https://media3.giphy.com/media/l46Ciz9gxiJNGM5YA/200.webp#120-grid1" alt="Slap Game Target">
+						</div>
+						<div class="col-lg-6">
+							<h2>
+								<span>Today's Victim is the Clown you currently see.
+									<!--<span id="nameDisplay">...</span>-->
+							</h2>
+							<h3>
+								<span>Time to bring the Pain!</h3>
 							<h5>
 								<span>Health:
 									<span id="healthDisplay">...</span>
@@ -36,40 +40,41 @@
 								<span>Hits:
 									<span id="hitCounter">...</span>
 							</h5>
+							<hr>
 							<button onclick="reset()">Reset</button>
-				</div>
-				<div class="col-lg-3">
-					<img src="//placehold.it/400x400" alt="Slap Game Target">
-				</div>
-				<div class="col-lg-3"></div>
-			
-			</div>
-			
-			<div class="row">
-				<div class="col-lg-3 .buttons">
-					<div class="col-lg-6">
-						<footer>
-							<button onclick="attack('slap')">Slap</button>
-							<button onclick="attack('punch')">Punch</button>
-							<button onclick="attack('kick')">Kick</button>
-							<div>
-								<p>
-									<span id="PlayerItems">Special moves!</p>
-								</span>
-								<button onclick="attack('doubleSlap')">Double Slap</button>
-								<button onclick="attack('upperPunch')">Upper Punch</button>
-									<button onclick="attack('flyingKick')">Flying Kick</button>
-							</div>
-			
-						</footer>
+							<hr>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-3"></div>
 			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-lg-12 .buttons">
+
+				<footer>
+					<span id="PlayerSkills">Special moves!</p>
+					</span>
+					<button onclick="attack('slap')">Slap</button>
+					<button onclick="attack('punch')">Punch</button>
+					<button onclick="attack('kick')">Kick</button>
+					<div>
+						<p>
+							<hr>
+							<span id="PlayerItems">Special moves!</p>
+						</span>
+						<button onclick="attack('doubleSlap')">Double Slap</button>
+						<button onclick="attack('upperPunch')">Upper Punch</button>
+						<button onclick="attack('flyingKick')">Flying Kick</button>
+					</div>
+
+				</footer>
 			</div>
+			<div class="col-lg-3"></div>
 		</div>
 	</div>
-	
+
+
 
 
 	<script src="game.js"></script>
