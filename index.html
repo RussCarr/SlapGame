@@ -8,16 +8,15 @@
 	<title>Slap Object Game</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
-	<link rel="stylesheet" href="game.css">
+
 
 </head>
 
 <body>
 	<div class="container">
-		<!--<button id="start" onclick="victimInfo()">Play</button>-->
 		<div class="header">
 			<h1>Welcome to 187 Murder, Death, Kill!</h1>
-			
+
 			<div class="row">
 				<div class="col-lg-12 center">
 
@@ -41,7 +40,7 @@
 									<span id="hitCounter">...</span>
 							</h5>
 							<hr>
-							<button onclick="reset()">Reset</button>
+							<button onclick="app.controllers.controller.reset()">Reset</button>
 							<hr>
 						</div>
 					</div>
@@ -53,19 +52,19 @@
 			<div class="col-lg-12 .buttons">
 
 				<footer>
-					<span id="PlayerSkills">Special moves!</p>
+					<span id="PlayerSkills">Attack moves!</p>
 					</span>
-					<button onclick="attack('slap')">Slap</button>
-					<button onclick="attack('punch')">Punch</button>
-					<button onclick="attack('kick')">Kick</button>
+					<button onclick="app.controllers.controller.fight('slap')">Slap</button>
+					<button onclick="app.controllers.controller.fight('punch')">Punch</button>
+					<button onclick="app.controllers.controller.fight('kick')">Kick</button>
 					<div>
 						<p>
 							<hr>
 							<span id="PlayerItems">Special moves!</p>
 						</span>
-						<button onclick="attack('doubleSlap')">Double Slap</button>
-						<button onclick="attack('upperPunch')">Upper Punch</button>
-						<button onclick="attack('flyingKick')">Flying Kick</button>
+						<button onclick="app.controllers.controller.upgrade('doubleSlap')">Double Slap</button>
+						<button onclick="app.controllers.controller.upgrade('upperPunch')">Upper Punch</button>
+						<button onclick="app.controllers.controller.upgrade('flyingKick')">Flying Kick</button>
 					</div>
 
 				</footer>
@@ -77,7 +76,10 @@
 
 
 
-	<script src="game.js"></script>
+	<script src="app/service.js"></script>
+	<script src="app/controller.js"></script>
+	<script src="app/app.js"></script>
+
 </body>
 
 </html>
